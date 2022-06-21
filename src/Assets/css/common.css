@@ -1,0 +1,10 @@
+.remove-btn{
+    width: 100px;
+    background-color: red;
+    border: none;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    
+}
