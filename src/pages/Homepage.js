@@ -10,9 +10,24 @@ import NewArrival from '../Components/home/NewArrival'
 import "../Assets/css/responsive.css"
 import FooterDesktop from '../Components/common/FooterDesktop'
 import FooterMobile from '../Components/common/FooterMobile'
+import axios from 'axios';
+import ApiURL from "../Api/ApiURL"
 
 
 export default class Homepage extends Component {
+
+  componentDidMount(){
+    window.scroll(0,0);
+    this.getVisitorDetails();
+  }
+
+  getVisitorDetails=()=> {
+    axios.get(ApiURL.VisitorDetails).then().catch();
+
+  }
+
+
+
   render() {
     return (
         
