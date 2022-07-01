@@ -1,0 +1,33 @@
+.slick-dots{
+    top: 90%;
+}
+.slider{
+    height: 380px;
+    width: 100% !important;
+}
+.slider-image{
+    height: 180px;
+    margin-top: 18%;
+    margin-left:10%;
+}
+.sliderTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.slider-btn{
+    background-color: red;
+    border:none;
+    color:white;
+    margin-top: 40px;
+}
+
+.sliderTitle{
+    font-size: 26px;
+    font-weight: 600;
+}
+.sliderSubTitle{
+    font-size: 16px;
+}
