@@ -41,3 +41,23 @@
 .ContentOverlayClose{
     display: none;
 }
+
+.nav-item-mobile{
+    display: flex;
+
+}
+.search-text-field-mobile{
+    width:100px;
+}
+.cart-btn-mobile{
+    margin-top: 20px;
+}
+
+.item-sign{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bell{
+    margin-right: 20px;
+}

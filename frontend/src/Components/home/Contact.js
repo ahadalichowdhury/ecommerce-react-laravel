@@ -90,15 +90,15 @@ onFormSubmit=(event)=>{
                   <Row >
                       <Col className="d-flex justify-content-center text-center" lg={6} md={6} sm={12} xs={12}>
                       <Form id="contactForm" onSubmit={this.onFormSubmit} className="onboardForm">
-                                        <h4 className="section-title">CONTACT WITH US</h4>
+                                        <h4 className="contact-title">CONTACT WITH US</h4>
                                         <h6 className="section-sub-title">Please Enter Your Mobile No, And Go Next</h6>
-                                        <input onChange={this.nameOnChange} className="form-control m-2" type="text" placeholder="Your Name"/>
-                                        <input onChange={this.mobileOnChange} className="form-control m-2" type="text" placeholder="Mobile Number"/>
-                                        <input onChange={this.msgOnChange} className="form-control m-2" type="text" placeholder="Message"/>
-                                        <button id="sendBtn" type="submit" className="">Send</button>
+                                        <input className="contact-text-field" onChange={this.nameOnChange} placeholder="Your Name"/>
+                                        <input className="contact-text-field" onChange={this.mobileOnChange}  placeholder="Mobile Number"/>
+                                        <input className="contact-text-field" onChange={this.msgOnChange}type="text" placeholder="Message"/>
+                                        <button className="contact-button-submit" id="sendBtn" type="submit" >Send</button>
                                     </Form>
                       </Col>
-                      <Col className="p-0 m-0 Desktop W-100" lg={6} md={6} sm={12} xs={12}>
+                      <Col className="Desktop" lg={6} md={6} sm={12} xs={12}>
                             <img className="contact-img" src="https://th.bing.com/th/id/R.0f8f96cd5a41d48ff45a75120dc9c610?rik=zh49jPCx5KaqyA&pid=ImgRaw&r=0" alt="" />
                         </Col>
                   </Row>

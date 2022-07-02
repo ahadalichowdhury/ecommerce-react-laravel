@@ -18,16 +18,16 @@ import OtpVerificationPage from '../pages/OtpVerificationPage';
 
 
 
+
  class ApiRoute extends Component {
   render() {
     return (
       <Fragment>
             
             <Switch> 
-            render={(props)=><pagename {...props} key={Date.now()}/>}
                 <Route exact path="/" render={(props)=><Homepage {...props} key={Date.now()}/>} /> 
                 <Route exact path="/onboard" render={(props)=><UserOnboardPage {...props} key={Date.now()}/>}/>         
-                <Route exact path="/contact-us" render={(props)=><UserOnboardPage {...props} key={Date.now()}/>} />
+                <Route exact path="/contact-us" render={(props)=><ContactPage {...props} key={Date.now()}/>} />
                 <Route exact path="/refund" render={(props)=><RefundPage {...props} key={Date.now()}/>}/>
                 <Route exact path="/policy" render={(props)=><PrivacyPage {...props} key={Date.now()}/>} />
                 <Route exact path="/purchase" render={(props)=><PurchesePage {...props} key={Date.now()}/>} />

@@ -1,22 +1,21 @@
-.contact-text-field{
+.onboard-text-field{
     width: 400px;
     margin-top: 10px;
     padding: 5px;
 }
 
-.contact-button-submit{
+.onboard-button-submit{
     width: 400px;
     padding: 5px;
     background-color: red;
     border: none;
     margin-top: 10px;
 }
-.contact-title{
+.onboard-title{
     font-size: 28px;
     font-weight: 700;
 }
-.contact-img{
+.onboard-img{
     height: 400px;
     width: 100%;
-    margin-bottom: 100px;
 }

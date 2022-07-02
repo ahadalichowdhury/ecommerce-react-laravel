@@ -80,13 +80,15 @@ export default class OtpVerification extends Component {
                   <Row >
                       <Col className="d-flex justify-content-center text-center" lg={6} md={6} sm={12} xs={12}>
                         <Form>
-                          <h4 className='section-title'>VERIFICATION CODE</h4>
-                                <input onChange={this.onChangeOtp} type="text" placeholder="Please Enter Your 6 digit Verification Code" />
-                                <button onClick={this.onClickResult} className="contact-btn">{this.state.btn}</button>
+                          <h2 className='otp-title'>VERIFICATION CODE</h2>
+                          <h5>Please Enter Your 6 digit Verification Code</h5>
+
+                                <input className="otp-text-field" onChange={this.onChangeOtp} type="text" placeholder="XXXXXX" />
+                                <button onClick={this.onClickResult} className="otp-button-submit">{this.state.btn}</button>
                         </Form> 
                       </Col>
                       <Col className="p-0 m-0 Desktop W-100" lg={6} md={6} sm={12} xs={12}>
-                            <img className="contact-img" src="https://th.bing.com/th/id/R.0f8f96cd5a41d48ff45a75120dc9c610?rik=zh49jPCx5KaqyA&pid=ImgRaw&r=0" alt="" />
+                            <img className="otp-img" src="https://th.bing.com/th/id/R.0f8f96cd5a41d48ff45a75120dc9c610?rik=zh49jPCx5KaqyA&pid=ImgRaw&r=0" alt="" />
                         </Col>
                   </Row>
                 </Col>

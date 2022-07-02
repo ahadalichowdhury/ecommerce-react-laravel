@@ -21,6 +21,9 @@ export default class UserOnboard extends Component {
     this.onClickResult=this.onClickResult.bind(this);
     this.onUserRedirect=this.onUserRedirect.bind(this);
   }
+  componentDidMount(){
+    window.scroll(0,0);
+  }
   onChangeResult(event){
     let mobileNo=event.target.value;
     this.setState({mobileNo:mobileNo});
@@ -72,15 +75,15 @@ export default class UserOnboard extends Component {
             <Row className="d-flex justify-content-center p-2">
                 <Col className="mt-4 card" lg={10} md={10} sm={12} xs={12}>
                   <Row >
-                      <Col className="d-flex justify-content-center text-center" lg={6} md={6} sm={12} xs={12}>
+                      <Col className="d-flex justify-content-center text-center" xl={6} lg={6} md={6} sm={12} xs={12}>
                         <Form>
-                          <h4 className='section-title'>USER CONTACT PAGE</h4>
-                                <input onChange={this.onChangeResult} type="text" placeholder="Your Phone Number"/>
-                                <button onClick={this.onClickResult} className="contact-btn">{this.state.btn}</button>
+                          <h2 className='onboard-title'>USER CONTACT PAGE</h2>
+                                <input className="onboard-text-field" onChange={this.onChangeResult} type="text" placeholder="Your Phone Number"/>
+                                <button onClick={this.onClickResult} className="onboard-button-submit">{this.state.btn}</button>
                         </Form> 
                       </Col>
-                      <Col className="p-0 m-0 Desktop W-100" lg={6} md={6} sm={12} xs={12}>
-                            <img className="contact-img" src="https://th.bing.com/th/id/R.0f8f96cd5a41d48ff45a75120dc9c610?rik=zh49jPCx5KaqyA&pid=ImgRaw&r=0" alt="" />
+                      <Col className="Desktop" lg={6} md={6} sm={12} xs={12}>
+                            <img className="onboard-img" src="https://th.bing.com/th/id/R.0f8f96cd5a41d48ff45a75120dc9c610?rik=zh49jPCx5KaqyA&pid=ImgRaw&r=0" alt="" />
                         </Col>
                   </Row>
                 </Col>
